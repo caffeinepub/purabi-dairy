@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Purabi Dairy brand tokens */
+    --brand-blue: 0.42 0.11 226;
+    --brand-blue-dark: 0.36 0.1 228;
+    --brand-blue-light: 0.97 0.02 225;
+    --brand-blue-mid: 0.93 0.03 225;
+
+    --background: 1 0 0;
+    --foreground: 0.145 0 0;
+    --card: 1 0 0;
+    --card-foreground: 0.145 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.145 0 0;
+    --primary: 0.42 0.11 226;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.97 0.02 225;
+    --secondary-foreground: 0.42 0.11 226;
+    --muted: 0.97 0.02 225;
+    --muted-foreground: 0.43 0.01 260;
+    --accent: 0.93 0.03 225;
+    --accent-foreground: 0.36 0.1 228;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.92 0 0;
+    --input: 0.92 0 0;
+    --ring: 0.42 0.11 226;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.42 0.11 226;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.97 0.02 225;
+    --sidebar-accent-foreground: 0.42 0.11 226;
+    --sidebar-border: 0.92 0 0;
+    --sidebar-ring: 0.42 0.11 226;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+}
